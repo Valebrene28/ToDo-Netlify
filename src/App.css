@@ -1,38 +1,116 @@
-.App {
-  text-align: center;
-}
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+  * {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande',
+      'Lucida Sans', Arial, sans-serif;
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  
+  body {
+    background-image: url("https://w0.peakpx.com/wallpaper/913/83/HD-wallpaper-video-game-kirby-and-the-forgotten-land-kirby.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin: 0;
+    height: 100vh;
   }
-  to {
-    transform: rotate(360deg);
+  .todo-app {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    width: 45%;
+    min-height: 600px;
+    background: rgba(255, 255, 255, 0);
+    text-align: center;
+    margin: 128px auto;
+    border-radius: 10px;
+    padding-bottom: 32px;
   }
-}
+  
+  .important-btn {
+    margin-right: 5px;
+    width: 20px;
+    border-width: 1px;
+    border-radius: 49%;
+    padding: 1px;
+    border-color: white;
+    color: white;
+    background: transparent;
+  }
+  
+  h1 {
+    margin: 32px 0;
+    font-size: 33px;
+  }
+  
+  .complete {
+    text-decoration: line-through;
+  }
+  
+  .todo-form {
+    margin-bottom: 32px;
+  }
+  
+  .todo-input {
+    padding: 14px 32px 14px 16px;
+    outline: none;
+    width: 320px;
+  }
+  
+  .todo-button {
+    padding: 16px;
+    border: none;
+    border-radius: 0 4px 4px 0;
+    cursor: pointer;
+    outline: none;
+    background: linear-gradient(
+      90deg,
+      rgb(223, 42, 42) 0%,
+      rgb(231, 109, 205) 100%
+    );
+    color: white;
+    text-transform: capitalize;
+  }
+  
+  .todo-container {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+  }
+  
+  .todo-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 4px auto;
+    color: white;
+    background: linear-gradient(
+      90deg,
+      rgb(227, 65, 140) 0%,
+      rgb(218, 25, 25) 100%
+    );
+    padding: 16px;
+    border-radius: 5px;
+    width: 90%;
+  }
+  
+  .iconsContainer {
+    display: flex;
+    align-items: center;
+    font-size: 24px;
+    cursor: pointer;
+  }
+  
+  .seperator {
+    height: 1px;
+    width: 80%;
+    align-self: center;
+    background-color: black;
+  }
+  
+  .titulo {
+  
+    color: rgb(255, 16, 16);
+  }
+  
